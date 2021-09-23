@@ -1,0 +1,12 @@
+curl https://api.openai.com/v1/engines/ada/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -d '{
+  "prompt": "Quote: All successes begin with Self-Discipline. It starts with you. \n### \nQuote: Don’t be afraid to be ambitious about your goals. Hard work never stops. Neither should your dreams. – Dwayne Johnson\n### \nQuote: Grind Hard, Shine Hard. – Dwayne Johnson\n### \nQuote: I like to use the hard times of the past to motivate me today. – Dwayne Johnson\n### \nQuote: Not only do I think being nice and kind is easy, but being kind, in my opinion is important. – Dwayne Johnson\n### \nQuote: One of the most important things you can accomplish is just being yourself. – Dwayne Johnson\n### \nQuote: “The first step to achieving your goal, is to take a moment to respect your goal. Know what it means to you to achieve it. – Dwayne Johnson\n### \nQuote: The wall! Your success is on the other side. Can’t jump over it or go around it. You know what to do. – Dwayne Johnson\n### \nQuote: There is no substitute for hard work. Always be humble and hungry. – Dwayne Johnson\n### \nQuote: Wake up determined. Go to bed satisfied. – Dwayne Johnson\n### \nQuote: We do today what they won’t, so tomorrow we accomplish what they can’t. – Dwayne Johnson\n### \nQuote: When life puts you in touchy situations, don’t say “Why Me?” Just say “Try Me**.**” – Dwayne Johnson\n### \nQuote: When you walk up to opportunities door, don’t knock it… Kick that bitch in, smile and introduce yourself. – Dwayne Johnson\n### \nQuote: With drive and a bit of talent, you can move mountains. – Dwayne Johnson\n### \nQuote: You don’t need directions, just point yourself to the top and go! – Dwayne Johnson\n### \nQuote: Be the person that when your feet touch the floor in the morning the devil says, “Awe sh”t, they’re up – Dwayne Johnson\n### \nQuote: If something stands between you and your success – move it. Never be denied. – Dwayne Johnson\n### \nQuote: In 1995 I had $7 bucks in my pocket and knew two things: I’m broke as hell and one day I won’t be. – Dwayne Johnson\n### \nQuote: Success at anything will always come down to this: focus and effort. And we control both. – Dwayne Johnson\n### \nQuote:",
+  "temperature": 1,
+  "max_tokens": 50,
+  "top_p": 1,
+  "frequency_penalty": 0.5,
+  "presence_penalty": 0,
+  "stop": ["###"]
+}'
